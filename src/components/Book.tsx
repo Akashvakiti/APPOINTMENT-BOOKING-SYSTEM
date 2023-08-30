@@ -43,7 +43,7 @@ function Book() {
     const dateObj={
       date:date
     }
-    axios.post('http://localhost:3000/booked',dateObj)
+    axios.post('https://oneshot-2fjq.onrender.com/booked',dateObj)
     .then((res)=>{
       //setBooked(res.data.BookedSlots);
       setBooked(res.data.BookedSlots);
@@ -64,7 +64,7 @@ function Book() {
     let prompt1=prompt("Confirm","Are you sure you want to CONFIRM?");
     if(prompt1!=null)
     {
-      axios.post('http://localhost:3000/date',obj)
+      axios.post('https://oneshot-2fjq.onrender.com/date',obj)
      .then((res)=>{
       console.log(res.data);
       })
@@ -77,7 +77,7 @@ function Book() {
     const slot={
       email:email
     }
-    axios.post('http://localhost:3000/yourslots',slot)
+    axios.post('https://oneshot-2fjq.onrender.com/yourslots',slot)
     .then((res)=>{
        console.log(res.data);
        setBookedSlots(res.data.slots);
@@ -91,7 +91,7 @@ function Book() {
     }
     let prompt1=prompt("Confirm","Are you sure you want to CANCEL the slot?");
     if(prompt1!=null){
-    axios.post('http://localhost:3000/delete',del)
+    axios.post('https://oneshot-2fjq.onrender.com/delete',del)
     .then((res)=>{
       console.log(res.data.message);
     })
