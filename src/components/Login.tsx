@@ -27,7 +27,7 @@ function Login() {
         {
             setNav(!nav);
             setLog(!log)
-            await axios.post('http://localhost:3000',userobj)
+            await axios.post('https://oneshot-2fjq.onrender.com',userobj)
             .then((response)=>{
                 console.log(response.data.otp);
                 setRandomotp(Number(response.data.otp));
