@@ -48,3 +48,4 @@ app.use((err,req,res,next)=>{
 
 //our backend is running on 3000 port
 app.listen(3000,()=>{console.log("Server is listening")})
+//const wss = new SocketServer({ app });
