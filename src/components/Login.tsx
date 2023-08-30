@@ -8,7 +8,7 @@ import axios from 'axios';
 function Login() {
     let navigate=useNavigate()
     const [email,setEmail]=useState('')
-    const [otp,setOtp]=useState(0)
+    const [otp,setOtp]=useState(1)
     const [randomotp,setRandomotp]=useState(0)
     const [otpsent,setOtpsent]=useState(false)
     const [nav,setNav]=useState(false)
