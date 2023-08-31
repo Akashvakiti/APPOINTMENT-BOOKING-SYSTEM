@@ -53,7 +53,7 @@ function Login() {
      <div className='row justify-content-center'>
       <form onSubmit={submit}>
         <h1>Login</h1>
-        <input type='email' placeholder='*Enter email' onChange={(e)=>setEmail(e.target.value)} /> 
+        <input type='email' placeholder='Enter email' onChange={(e)=>setEmail(e.target.value)} /> 
         {
             log&&<Button variant='success' type='submit'>Login</Button>
         }
