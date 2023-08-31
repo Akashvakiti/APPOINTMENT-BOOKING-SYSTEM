@@ -50,7 +50,7 @@ function Login() {
 
   return (
     <div className='login w-50 mx-auto' >
-
+     <div className='row justify-content-center'>
       <form onSubmit={submit}>
         <h1>Login</h1>
         <input type='email' placeholder='*Enter email' onChange={(e)=>setEmail(e.target.value)} /> 
@@ -68,7 +68,7 @@ function Login() {
           invalid===1&&<h6 className='text-danger'>Invalid OTP</h6>
         }
       </form>
-
+     </div>
     </div>
   );
 }
