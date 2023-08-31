@@ -10,6 +10,7 @@
 }
 .login form input{
   margin: 12px;
+   width: 10vh;
 }
 
 .login form Button{
