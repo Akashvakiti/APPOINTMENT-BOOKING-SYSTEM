@@ -9,7 +9,7 @@
   width: 500px;
 }
 
-@media (min-width: 576px) {
+/* @media (min-width: 576px) {
   .login form input{
     width: 10vh !important;
   }
@@ -18,7 +18,7 @@
   .login form input{
     width: 15vh !important;
   }
-}
+} */
 .login form input{
   margin: 12px;
   width: 10vh !important;
